@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="740dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555">
+
+        <!--red color for background of text view-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="317dp"-->
+        <!--            android:layout_height="58dp"-->
+        <!--            android:fontFamily="@font/cabinsketchregular"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/student_personal_app"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/imageView"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            tools:layout_editor_absoluteX="174dp" />-->
+
+        <TextView
+            android:id="@+id/simpleTextView"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/track"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="319dp"
+            android:layout_height="382dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toTopOf="@+id/gotologin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.496"
+            app:srcCompat="@drawable/track" />
+
+        <Button
+            android:id="@+id/gotologin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_black"
+            android:fontFamily="@font/chakrapetchbold"
+            android:text="@string/getstarted"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:fontFamily="sans-serif" />
+
+    </LinearLayout>
+    <!--    <Button-->
+<!--        android:id="@+id/login_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:text="@string/btn_login"-->
+<!--        android:textColor="@color/colorPink"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.755" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

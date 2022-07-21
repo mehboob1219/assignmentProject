@@ -1,6 +1,5 @@
 package com.iteyes.placesproject;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
@@ -11,7 +10,6 @@ import android.widget.Toast;
 
 public class InternetCheckService extends BroadcastReceiver {
 
-    @SuppressLint("UnsafeProtectedBroadcastReceiver")
     @Override
     public void onReceive(Context context, Intent intent) {
         String status = NetworkUtil.getNetworkState(context);

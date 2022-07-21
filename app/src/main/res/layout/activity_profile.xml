@@ -57,6 +57,15 @@
                         android:textSize="12dp"
                         android:textStyle="bold"/>
 
+                    <Button
+                        android:id="@+id/wether_check"
+
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+
+
+                        android:text="Get Weather Details" />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -74,7 +83,8 @@
                         <Button
                             android:id="@+id/btn_location"
                             style="@style/profileStyledBackButton"
-                            android:text="@string/update_my_location" />
+                            android:text="@string/update_my_location" />/>
+
                     </RelativeLayout>
 
                 </LinearLayout>

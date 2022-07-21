@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 public class dashboard extends AppCompatActivity {
     private TextView userEmail , userName,userEmailLow,userFullName,myLocation,dateView;
-    private Button buttonLocation;
+    private Button buttonLocation, btnweather;
     public BroadcastReceiver broadcastReceiver = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,7 @@ public class dashboard extends AppCompatActivity {
         buttonLocation = (Button) findViewById(R.id.btn_location);
         myLocation = (TextView) findViewById(R.id.myLocation);
         dateView = (TextView) findViewById(R.id.dateView);
+        btnweather = (Button) findViewById(R.id.wether_check);
         sessions ses = new sessions(dashboard.this , sessions.USER_SESSION);
         System.out.println("Dashbaord Session Test: "+ ses.getUserIdRememberSession());
         String id =ses.getUserIdRememberSession();
@@ -81,7 +82,13 @@ public class dashboard extends AppCompatActivity {
             }
         });
 
-
+        btnweather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(dashboard.this , wether.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
